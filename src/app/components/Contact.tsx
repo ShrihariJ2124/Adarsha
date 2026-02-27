@@ -135,7 +135,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-[#1e3a8a] mb-2">Address</h4>
                   <p className="text-gray-700">
-                    ADARSH Higher Primary School<br />
+                    ADASHA Higher Primary School<br />
                     Belakavadi, Malavally Taluk<br />
                     Mandya District – 571417<br />
                     Karnataka, India

@@ -67,13 +67,13 @@ export function Navbar() {
             <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] rounded-xl bg-white shadow-lg border border-blue-100 p-1">
               <img
                 src={siteImages.logo}
-                alt="ADARSH HPS logo"
+                alt="ADASHA HPS logo"
                 className="w-full h-full rounded-lg object-contain"
               />
             </div>
             <div className="flex flex-col">
               <h1 className="text-[#1e3a8a] text-xs sm:text-base lg:text-xl font-bold leading-tight">
-                {language === 'en' ? 'ADARSH HPS' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
+                {language === 'en' ? 'ADASHA HPS' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
               </h1>
               <p className="text-gray-600 text-[9px] sm:text-xs lg:text-sm">
                 {language === 'en' ? 'Belakavadi' : 'ಬೇಲಕವಾಡಿ'}
@@ -193,4 +193,5 @@ export function Navbar() {
     </nav>
   );
 }
+
 

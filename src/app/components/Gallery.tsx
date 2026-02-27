@@ -50,7 +50,7 @@ export function Gallery() {
             Photo Gallery
           </h2>
           <p className="text-gray-600 text-lg">
-            Glimpses of life at ADARSH HPS
+            Glimpses of life at ADASHA HPS
           </p>
           <p className="text-gray-600 mt-2">
             ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆಯಲ್ಲಿನ ಜೀವನದ ನೋಟಗಳು

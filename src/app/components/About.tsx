@@ -80,7 +80,7 @@ export function About() {
           className="text-center mb-12 lg:mb-16"
         >
           <h2 className="text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-4">
-            About ADARSH HPS
+            About ADASHA HPS
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#ea580c] to-[#fb923c] mx-auto rounded-full" />
         </motion.div>
@@ -124,7 +124,7 @@ export function About() {
             
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                ADARSH Higher Primary School, located in the rural heartland of
+                ADASHA Higher Primary School, located in the rural heartland of
                 Belakavadi, Malavally Taluk, Mandya District, has been a beacon of
                 quality education for over three decades. As a Private Aided school,
                 we are committed to providing accessible, inclusive, and empowering

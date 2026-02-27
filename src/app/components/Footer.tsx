@@ -19,7 +19,7 @@ export function Footer() {
                 <span className="text-white text-xl font-bold">A</span>
               </div>
               <div>
-                <h3 className="font-bold text-lg">ADARSH HPS</h3>
+                <h3 className="font-bold text-lg">ADASHA HPS</h3>
                 <p className="text-sm text-gray-300">Belakavadi</p>
               </div>
             </div>
@@ -68,7 +68,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#ea580c] flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  adarsh.hps@example.com
+                  ahpsbelakavadi@gmail.com
                 </span>
               </li>
             </ul>
@@ -117,7 +117,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-300 text-sm text-center md:text-left">
-              © 2026 ADARSH Higher Primary School. All rights reserved.
+              © 2026 ADASHA Higher Primary School. All rights reserved.
             </p>
             <div className="flex gap-6">
               <button className="text-gray-300 hover:text-white text-sm transition-colors">

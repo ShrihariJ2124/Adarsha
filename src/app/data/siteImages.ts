@@ -31,17 +31,17 @@ export const siteImages = {
   },
   gallery: {
     schoolBuilding: imagePath('gallery-01-school-building.jpg'),
-    smartClassroom: imagePath('hero-02-smart-classroom.jpg.jpeg'),
-    playgroundArea: imagePath('hero-03-playground.jpg'),
+    smartClassroom: imagePath('gallery-02-smart-classroom.jpg'),
+    playgroundArea: imagePath('gallery-03-playground-area.jpg'),
     janmashtamiCelebration: imagePath('gallery-04-janmashtami-celebration.png'),
     republicDay: imagePath('hero-05-republic-day.png'),
     kannadaRajyotsava: imagePath('gallery-06-kannada-rajyotsava.png'),
     parentTeacherMeeting: imagePath('gallery-07-parent-teacher-meeting.png'),
     sportsDay: imagePath('gallery-08-sports-day.jpg'),
-    annualFunction: imagePath('hero-06-parent-partnership.png'),
-    library: imagePath('about-school-building.jpg'),
-    studentsLearning: imagePath('hero-01-school-building.jpg'),
-    studentPerformance: imagePath('hero-04-janmashtami.png'),
+    annualFunction: imagePath('gallery-09-annual-function.jpg'),
+    library: imagePath('gallery-10-library.jpg'),
+    studentsLearning: imagePath('gallery-11-students-learning.jpg'),
+    studentPerformance: imagePath('gallery-12-student-performance.jpg'),
   },
   community: {
     parents: imagePath('gallery-07-parent-teacher-meeting.png'), // placeholder

@@ -58,9 +58,9 @@ export function Navbar() {
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-8">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-6 xl:px-8">
         <div className="flex items-center justify-between h-20 sm:h-24 lg:h-24">
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0 max-w-[72%] xl:max-w-none">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 pr-2">
             <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-16 lg:h-16 rounded-xl bg-white shadow-lg border border-blue-100 p-1 shrink-0">
               <img
                 src={siteImages.logo}
@@ -69,7 +69,7 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col min-w-0">
-              <h1 className="text-[#1e3a8a] text-[11px] sm:text-sm lg:text-sm xl:text-base font-bold leading-tight lg:truncate">
+              <h1 className="text-[#1e3a8a] text-[11px] sm:text-sm lg:text-sm xl:text-base font-bold leading-tight">
                 {language === 'en' ? 'ADHASRSHA HIGHER PRIMARY SCHOOL' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
               </h1>
               <p className="text-gray-600 text-[10px] sm:text-xs lg:text-sm">
@@ -78,7 +78,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="hidden xl:flex items-center gap-6">
+          <div className="hidden 2xl:flex items-center gap-4">
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -91,7 +91,7 @@ export function Navbar() {
             ))}
           </div>
 
-          <div className="hidden xl:flex items-center gap-3">
+          <div className="hidden 2xl:flex items-center gap-3">
             <div className="flex items-center gap-2">
               <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-16 xl:h-20 w-auto object-contain" />
               <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-16 xl:h-20 w-auto object-contain" />
@@ -105,7 +105,7 @@ export function Navbar() {
             </button>
           </div>
 
-          <div className="xl:hidden flex items-center gap-1.5">
+          <div className="2xl:hidden flex items-center gap-1.5">
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
               className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-xs"
@@ -133,7 +133,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="xl:hidden bg-white border-t border-gray-200 overflow-hidden"
+            className="2xl:hidden bg-white border-t border-gray-200 overflow-hidden"
           >
             <div className="px-4 py-4 space-y-3 max-h-[70vh] overflow-y-auto">
               {navLinks.map((link) => (

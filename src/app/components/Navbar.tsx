@@ -92,6 +92,10 @@ export function Navbar() {
           </div>
 
           <div className="hidden xl:flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-16 xl:h-20 w-auto object-contain" />
+              <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-16 xl:h-20 w-auto object-contain" />
+            </div>
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
               className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-sm hover:shadow-lg transition-all duration-300 shrink-0"
@@ -99,10 +103,6 @@ export function Navbar() {
               <Globe className="w-4 h-4" />
               {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
             </button>
-            <div className="hidden 2xl:flex items-center gap-2">
-              <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-16 xl:h-20 w-auto object-contain" />
-              <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-16 xl:h-20 w-auto object-contain" />
-            </div>
           </div>
 
           <div className="xl:hidden flex items-center gap-1.5">

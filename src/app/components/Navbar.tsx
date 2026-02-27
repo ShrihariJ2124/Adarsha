@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Mail, Globe } from 'lucide-react';
+import { Menu, X, Mail, Globe, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { siteImages } from '../data/siteImages';
 
@@ -61,10 +61,10 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24 lg:h-28">
+        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-28">
           {/* Logo and School Name */}
           <div className="flex items-center gap-3">
-            <div className="w-[4.5rem] h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] rounded-xl bg-white shadow-lg border border-blue-100 p-1">
+            <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] rounded-xl bg-white shadow-lg border border-blue-100 p-1">
               <img
                 src={siteImages.logo}
                 alt="ADARSH HPS logo"
@@ -72,10 +72,10 @@ export function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-[#1e3a8a] text-sm sm:text-base lg:text-xl font-bold leading-tight">
+              <h1 className="text-[#1e3a8a] text-xs sm:text-base lg:text-xl font-bold leading-tight">
                 {language === 'en' ? 'ADARSH HPS' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
               </h1>
-              <p className="text-gray-600 text-[10px] sm:text-xs lg:text-sm">
+              <p className="text-gray-600 text-[9px] sm:text-xs lg:text-sm">
                 {language === 'en' ? 'Belakavadi' : 'ಬೇಲಕವಾಡಿ'}
               </p>
             </div>
@@ -121,7 +121,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6 text-[#1e3a8a]" />
@@ -141,7 +141,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-white border-t border-gray-200 overflow-hidden"
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-4 space-y-3 max-h-[70vh] overflow-y-auto">
               {navLinks.map((link) => (
                 <button
                   key={link.id}
@@ -151,7 +151,7 @@ export function Navbar() {
                   {link.label}
                 </button>
               ))}
-              <div className="pt-4 border-t border-gray-200 space-y-3">
+              <div className="pt-3 border-t border-gray-200 space-y-2">
                 <div className="flex items-center gap-2 px-4 py-2">
                   <img
                     src={siteImages.swamiji.one}
@@ -165,11 +165,18 @@ export function Navbar() {
                   />
                 </div>
                 <a
-                  href="mailto:adarsh.hps@example.com"
+                  href="mailto:ahpsbelakavadi@gmail.com"
                   className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-[#ea580c] transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span className="text-sm">adarsh.hps@example.com</span>
+                  <span className="text-sm">ahpsbelakavadi@gmail.com</span>
+                </a>
+                <a
+                  href="tel:+917676489193"
+                  className="flex items-center gap-2 px-4 py-2 text-gray-700 hover:text-[#ea580c] transition-colors"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span className="text-sm">+91 76764 89193</span>
                 </a>
                 <button
                   onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}

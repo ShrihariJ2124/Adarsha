@@ -68,11 +68,11 @@ export function HeroCarousel() {
   };
 
   return (
-    <section id="home" className="relative mt-20 lg:mt-24">
+    <section id="home" className="relative mt-16 sm:mt-20 lg:mt-24">
       <Slider ref={sliderRef} {...settings} className="hero-carousel">
         {carouselSlides.map((slide, index) => (
           <div key={index} className="relative">
-            <div className="relative h-[60vh] sm:h-[70vh] lg:h-[85vh] overflow-hidden">
+            <div className="relative h-[52vh] sm:h-[68vh] lg:h-[85vh] overflow-hidden">
               {/* Background Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
@@ -80,7 +80,7 @@ export function HeroCarousel() {
               />
               
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/20" />
               
               {/* Content */}
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
@@ -88,7 +88,7 @@ export function HeroCarousel() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="max-w-2xl text-white"
+                  className="max-w-xl lg:max-w-2xl text-white"
                 >
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ export function HeroCarousel() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight"
+                    className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-3 sm:mb-6 leading-tight"
                   >
                     {slide.title}
                   </motion.h1>
@@ -112,7 +112,7 @@ export function HeroCarousel() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 text-gray-200"
+                    className="text-base sm:text-xl lg:text-2xl mb-5 sm:mb-8 text-gray-200"
                   >
                     {slide.subtitle}
                   </motion.p>
@@ -126,7 +126,7 @@ export function HeroCarousel() {
                     >
                       <button
                         onClick={scrollToContact}
-                        className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#ea580c] to-[#fb923c] text-white rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group"
+                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#ea580c] to-[#fb923c] text-white rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group"
                       >
                         <span className="font-semibold">Admissions Open</span>
                         <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -134,7 +134,7 @@ export function HeroCarousel() {
                       
                       <button
                         onClick={scrollToContact}
-                        className="px-6 sm:px-8 py-3 sm:py-4 bg-white/20 backdrop-blur-md text-white border-2 border-white/40 rounded-xl hover:bg-white/30 hover:shadow-2xl transition-all duration-300"
+                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/20 backdrop-blur-md text-white border-2 border-white/40 rounded-xl hover:bg-white/30 hover:shadow-2xl transition-all duration-300"
                       >
                         <span className="font-semibold">Contact Us</span>
                       </button>

@@ -51,7 +51,7 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -59,7 +59,7 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="bg-gradient-to-br from-white to-[#fef9f3] rounded-2xl p-8 shadow-xl border border-gray-200">
+            <div className="bg-gradient-to-br from-white to-[#fef9f3] rounded-2xl p-6 sm:p-8 shadow-xl border border-gray-200">
               <h3 className="text-2xl font-bold text-[#1e3a8a] mb-6">
                 Send us a Message
               </h3>
@@ -197,7 +197,7 @@ export function Contact() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <div className="rounded-2xl overflow-hidden shadow-2xl h-[400px] lg:h-[500px]">
+          <div className="rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[380px] lg:h-[500px]">
             <iframe
               src={mapEmbedSrc}
               width="100%"
@@ -209,7 +209,7 @@ export function Contact() {
               title="School Location"
             />
           </div>
-          <div className="mt-4 text-right">
+          <div className="mt-4 text-left sm:text-right">
             <a
               href={mapLink}
               target="_blank"

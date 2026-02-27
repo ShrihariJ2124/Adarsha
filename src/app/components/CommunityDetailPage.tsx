@@ -99,7 +99,7 @@ export function CommunityDetailPage({ pageKey }: CommunityDetailPageProps) {
   const Icon = meta.icon;
 
   return (
-    <section className="pt-36 pb-16 lg:pb-24 bg-gradient-to-br from-[#fffaf2]/80 via-white/80 to-[#eef4ff]/80 min-h-[70vh]">
+    <section className="pt-28 sm:pt-32 lg:pt-36 pb-16 lg:pb-24 bg-gradient-to-br from-[#fffaf2]/80 via-white/80 to-[#eef4ff]/80 min-h-[70vh]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <a
           href="#"
@@ -119,7 +119,7 @@ export function CommunityDetailPage({ pageKey }: CommunityDetailPageProps) {
             <Icon className="w-4 h-4" />
             <span className="font-semibold text-sm">{meta.title}</span>
           </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-3">{meta.title}</h2>
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#1e3a8a] mb-3">{meta.title}</h2>
           <p className="text-gray-600 text-lg">{meta.subtitle}</p>
         </motion.div>
 
@@ -134,7 +134,7 @@ export function CommunityDetailPage({ pageKey }: CommunityDetailPageProps) {
                 className="bg-white border border-blue-100 rounded-2xl overflow-hidden shadow-lg md:col-span-2 lg:col-span-3"
               >
                 <div className="grid lg:grid-cols-[280px_1fr]">
-                  <img src={parent.image} alt={parent.name} className="w-full h-72 lg:h-full object-cover" />
+                  <img src={parent.image} alt={parent.name} className="w-full h-56 sm:h-72 lg:h-full object-cover" />
                   <div className="p-6 lg:p-8">
                     <h3 className="text-xl font-bold text-[#1e3a8a]">{parent.name}</h3>
                     <p className="text-sm text-[#ea580c] font-semibold mb-3">{parent.relation}</p>

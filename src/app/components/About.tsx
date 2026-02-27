@@ -94,7 +94,7 @@ export function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative h-[280px] sm:h-[360px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={siteImages.about}
                 alt="School Building"
@@ -106,7 +106,7 @@ export function About() {
             {/* Floating Card */}
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-2xl border-l-4 border-[#ea580c]">
               <p className="text-[#1e3a8a] font-bold text-xl mb-1">Established</p>
-              <p className="text-4xl font-bold text-[#ea580c]">1987</p>
+              <p className="text-3xl sm:text-4xl font-bold text-[#ea580c]">1987</p>
             </div>
           </motion.div>
 
@@ -174,7 +174,7 @@ export function About() {
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-white to-[#fef9f3] p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-gradient-to-br from-white to-[#fef9f3] p-4 sm:p-6 lg:p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="bg-gradient-to-br from-[#1e3a8a] to-[#3b82f6] w-12 h-12 lg:w-14 lg:h-14 rounded-xl flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 lg:w-7 lg:h-7 text-white" />

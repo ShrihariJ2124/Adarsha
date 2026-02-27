@@ -17,7 +17,7 @@ export const siteImages = {
   },
   facilities: {
     classrooms: imagePath('facility-01-classrooms.jpg'),
-    headmasterRoom: imagePath('facility-02-headmaster-room.jpg.jpeg'),
+    headmasterRoom: imagePath('facility-02-headmaster-room.jpg'),
     library: imagePath('gallery-10-library.jpg.jpeg'),
     smartClass: imagePath('facility-04-smart-class.jpg'),
     computers: imagePath('facility-05-computers.jpg'),

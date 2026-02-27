@@ -7,7 +7,7 @@ import { siteImages } from '../data/siteImages';
 const carouselSlides = [
   {
     image: siteImages.hero.schoolBuilding,
-    title: 'Welcome to ADASHA HPS BELAKAVADI',
+    title: 'Welcome to ADHASRSHA HIGHER PRIMARY SCHOOL',
     subtitle: 'Empowering Rural Dreams Through Quality Education',
     description: 'Established in 1987',
   },

@@ -47,7 +47,7 @@ export function Navbar() {
     { label: language === 'en' ? 'About' : 'ನಮ್ಮ ಬಗ್ಗೆ', id: 'about' },
     { label: language === 'en' ? 'Academics' : 'ಶೈಕ್ಷಣಿಕ', id: 'academics' },
     { label: language === 'en' ? 'Facilities' : 'ಸೌಲಭ್ಯಗಳು', id: 'facilities' },
-    { label: language === 'en' ? 'Community' : 'Community', id: 'community' },
+    { label: language === 'en' ? 'Community' : 'ಸಮುದಾಯ', id: 'community' },
     { label: language === 'en' ? 'Gallery' : 'ಗ್ಯಾಲರಿ', id: 'gallery' },
     { label: language === 'en' ? 'Contact' : 'ಸಂಪರ್ಕಿಸಿ', id: 'contact' },
   ];
@@ -55,33 +55,29 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-white/80 backdrop-blur-sm'
+        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-28">
-          {/* Logo and School Name */}
-          <div className="flex items-center gap-3">
-            <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-[5.25rem] lg:h-[5.25rem] rounded-xl bg-white shadow-lg border border-blue-100 p-1">
+        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-24">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-16 lg:h-16 rounded-xl bg-white shadow-lg border border-blue-100 p-1 shrink-0">
               <img
                 src={siteImages.logo}
                 alt="ADHASRSHA HIGHER PRIMARY SCHOOL logo"
                 className="w-full h-full rounded-lg object-contain"
               />
             </div>
-            <div className="flex flex-col">
-              <h1 className="text-[#1e3a8a] text-xs sm:text-base lg:text-xl font-bold leading-tight">
+            <div className="flex flex-col min-w-0">
+              <h1 className="text-[#1e3a8a] text-[11px] sm:text-sm lg:text-base font-bold leading-tight">
                 {language === 'en' ? 'ADHASRSHA HIGHER PRIMARY SCHOOL' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
               </h1>
-              <p className="text-gray-600 text-[9px] sm:text-xs lg:text-sm">
+              <p className="text-gray-600 text-[10px] sm:text-xs lg:text-sm">
                 {language === 'en' ? 'Belakavadi' : 'ಬೇಲಕವಾಡಿ'}
               </p>
             </div>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
@@ -95,44 +91,42 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Contact Info and Language Toggle */}
-          <div className="hidden lg:flex items-center gap-4">
-            <div className="flex items-center gap-4">
-              <img
-                src={siteImages.swamiji.one}
-                alt="Swamiji 1"
-                className="h-24 lg:h-28 w-auto object-contain"
-              />
-              <img
-                src={siteImages.swamiji.two}
-                alt="Swamiji 2"
-                className="h-24 lg:h-28 w-auto object-contain"
-              />
-            </div>
+          <div className="hidden lg:flex items-center gap-3">
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-sm hover:shadow-lg transition-all duration-300"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-sm hover:shadow-lg transition-all duration-300 shrink-0"
             >
               <Globe className="w-4 h-4" />
               {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
             </button>
+            <div className="flex items-center gap-2">
+              <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-16 xl:h-20 w-auto object-contain" />
+              <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-16 xl:h-20 w-auto object-contain" />
+            </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-[#1e3a8a]" />
-            ) : (
-              <Menu className="w-6 h-6 text-[#1e3a8a]" />
-            )}
-          </button>
+          <div className="lg:hidden flex items-center gap-1.5">
+            <button
+              onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-xs"
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {language === 'en' ? 'ಕನ್ನಡ' : 'EN'}
+            </button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2.5 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6 text-[#1e3a8a]" />
+              ) : (
+                <Menu className="w-6 h-6 text-[#1e3a8a]" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -153,16 +147,8 @@ export function Navbar() {
               ))}
               <div className="pt-3 border-t border-gray-200 space-y-2">
                 <div className="flex items-center gap-2 px-4 py-2">
-                  <img
-                    src={siteImages.swamiji.one}
-                    alt="Swamiji 1"
-                    className="w-20 h-20 object-contain"
-                  />
-                  <img
-                    src={siteImages.swamiji.two}
-                    alt="Swamiji 2"
-                    className="w-20 h-20 object-contain"
-                  />
+                  <img src={siteImages.swamiji.one} alt="Swamiji 1" className="w-20 h-20 object-contain" />
+                  <img src={siteImages.swamiji.two} alt="Swamiji 2" className="w-20 h-20 object-contain" />
                 </div>
                 <a
                   href="mailto:ahpsbelakavadi@gmail.com"
@@ -193,6 +179,3 @@ export function Navbar() {
     </nav>
   );
 }
-
-
-

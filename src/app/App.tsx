@@ -18,6 +18,8 @@ function getCommunityPageFromHash(hash: string): CommunityPageKey | null {
 }
 
 export default function App() {
+  const backgroundImageUrl = `${import.meta.env.BASE_URL}images/bg-image.png`;
+
   useEffect(() => {
     const isCommunityHash = window.location.hash.startsWith('#/community/');
     if (!isCommunityHash && window.location.hash) {
@@ -60,7 +62,8 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#fef9f3] bg-[url('/images/bg-image.png')] bg-top bg-[length:100%_auto] bg-repeat-y"
+      className="min-h-screen bg-[#fef9f3] bg-top bg-[length:100%_auto] bg-repeat-y"
+      style={{ backgroundImage: `url(${backgroundImageUrl})` }}
     >
       <Navbar />
       <main>

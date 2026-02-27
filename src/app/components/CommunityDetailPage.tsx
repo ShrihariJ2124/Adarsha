@@ -3,12 +3,13 @@ import { motion } from 'motion/react';
 import { siteImages } from '../data/siteImages';
 
 export type CommunityPageKey = 'parents' | 'alumni' | 'faculty';
+const imagePath = (name: string) => `${import.meta.env.BASE_URL}images/${name}`;
 
 const parentsTestimonials = [
   {
     name: 'Parents Feedback',
     relation: 'ಶಾಲೆಯ ಬಗ್ಗೆ ಅಭಿಪ್ರಾಯ',
-    image: '/images/parent-lokeshmurty.png',
+    image: imagePath('parent-lokeshmurty.png'),
     quote:
       'ಶಿವಲಿಂಗಸ್ವಾಮೀಜಿ ಅವರು ಗ್ರಾಮೀಣ ಭಾಗದ ಮಕ್ಕಳಿಗೆ ಜ್ಞಾನದ ಬೆಳಕನ್ನು ನೀಡಬೇಕು ಎಂಬ ಉದ್ದೇಶದಿಂದ ಆದರ್ಶ ಶಾಲೆ ತೆರೆದು ಕಡಿಮೆ ವೆಚ್ಚದಲ್ಲಿ ನುರಿತ ಶಿಕ್ಷಕರಿಂದ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ ನೀಡುತ್ತಿರುವುದರ ಜತೆಗೆ ಶಾಲೆಯಲ್ಲಿ ಕುಡಿಯುವ ನೀರು, ಶೌಚಾಲಯದ ವ್ಯವಸ್ಥೆ, ವಿಶಾಲವಾದ ಆಟದ ಮೈದಾನ, ಆವರಣದ ಸುತ್ತ ಕಾಂಪೌಂಡ್ ನಿರ್ಮಿಸಿ, ಸಸಿಗಳನ್ನು ನೆಟ್ಟು ಒಳ್ಳೆಯ ಪರಿಸರದಲ್ಲಿ ಶಿಕ್ಷಣ ನೀಡುತ್ತಾ ಮಕ್ಕಳ ಸರ್ವಾಂಗೀಣ ಪ್ರಗತಿಗೆ ದಾರಿ ದೀಪವಾಗಿದ್ದಾರೆ.',
   },
@@ -43,31 +44,31 @@ const facultyMembers = [
     name: 'Nandini S Chandra',
     phone: '9632795749',
     qualification: 'PUC, D.Ed, NST Computer',
-    photo: '/images/FacultyNandini madma.png',
+    photo: imagePath('FacultyNandini madma.png'),
   },
   {
     name: 'Harshitha Siddaraju',
     phone: '8123823570',
     qualification: 'B.A',
-    photo: '/images/FacultyHarshitha.jpg',
+    photo: imagePath('FacultyHarshitha.jpg'),
   },
   {
     name: 'Shivakumar M Lingayya',
     phone: 'Not provided',
     qualification: 'PUC, TCH, B.Com',
-    photo: '/images/FacultyShivakumar sir.png',
+    photo: imagePath('FacultyShivakumar sir.png'),
   },
   {
     name: 'Naveeda Parveen',
     phone: '7483511040',
     qualification: 'PUC, JOC, Hindi B.Ed',
-    photo: '/images/FacultyNaveeda madam.png',
+    photo: imagePath('FacultyNaveeda madam.png'),
   },
   {
     name: 'Lokeshmurthy S/O M. Mallappa',
     phone: 'Not provided',
     qualification: 'PUC, TCH',
-    photo: '/images/Faculty-Lokesh.png',
+    photo: imagePath('Faculty-Lokesh.png'),
   },
 ];
 

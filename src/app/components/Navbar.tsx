@@ -55,7 +55,7 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/80 backdrop-blur-sm'
+        isScrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-200/80' : 'bg-white/85 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-6 xl:px-8">
@@ -98,7 +98,7 @@ export function Navbar() {
             </div>
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-sm hover:shadow-lg transition-all duration-300 shrink-0"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#1e3a8a]/20 bg-white text-[#1e3a8a] text-sm hover:bg-[#f8fafc] transition-colors duration-300 shrink-0"
             >
               <Globe className="w-4 h-4" />
               {language === 'en' ? 'ಕನ್ನಡ' : 'English'}
@@ -108,7 +108,7 @@ export function Navbar() {
           <div className="xl:hidden flex items-center gap-1.5">
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
-              className="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white text-xs"
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-full border border-[#1e3a8a]/20 bg-white text-[#1e3a8a] text-xs"
             >
               <Globe className="w-3.5 h-3.5" />
               {language === 'en' ? 'ಕನ್ನಡ' : 'EN'}
@@ -166,7 +166,7 @@ export function Navbar() {
                 </a>
                 <button
                   onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#1e3a8a] to-[#3b82f6] text-white hover:shadow-lg transition-all duration-300"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg border border-[#1e3a8a]/20 bg-white text-[#1e3a8a] hover:bg-[#f8fafc] transition-colors duration-300"
                 >
                   <Globe className="w-4 h-4" />
                   {language === 'en' ? 'Switch to ಕನ್ನಡ' : 'Switch to English'}
@@ -179,3 +179,4 @@ export function Navbar() {
     </nav>
   );
 }
+

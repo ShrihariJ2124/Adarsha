@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import Slider from 'react-slick';
-import { ChevronRight } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 import { siteImages } from '../data/siteImages';
 
@@ -49,22 +49,21 @@ export function HeroCarousel() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 650,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
     fade: true,
-    cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
+    cssEase: 'ease-in-out',
     pauseOnHover: true,
     arrows: true,
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const schoolMapUrl = 'https://maps.app.goo.gl/ktN6UjGnAWgAU4wy6';
+
+  const openSchoolLocation = () => {
+    window.open(schoolMapUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -80,7 +79,7 @@ export function HeroCarousel() {
               />
               
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/20" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
               
               {/* Content */}
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
@@ -122,21 +121,14 @@ export function HeroCarousel() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.6 }}
-                      className="flex flex-col sm:flex-row gap-4"
+                      className="flex"
                     >
                       <button
-                        onClick={scrollToContact}
-                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[#ea580c] to-[#fb923c] text-white rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group"
+                        onClick={openSchoolLocation}
+                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#1e3a8a] rounded-xl border border-white/70 hover:bg-white/90 transition-all duration-300 flex items-center justify-center gap-2"
                       >
-                        <span className="font-semibold">Admissions Open</span>
-                        <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                      </button>
-                      
-                      <button
-                        onClick={scrollToContact}
-                        className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/20 backdrop-blur-md text-white border-2 border-white/40 rounded-xl hover:bg-white/30 hover:shadow-2xl transition-all duration-300"
-                      >
-                        <span className="font-semibold">Contact Us</span>
+                        <span className="font-semibold">Directions to School</span>
+                        <MapPin className="w-5 h-5" />
                       </button>
                     </motion.div>
                   )}

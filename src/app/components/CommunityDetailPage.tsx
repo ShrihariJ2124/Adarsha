@@ -13,6 +13,13 @@ const parentsTestimonials = [
     quote:
       'ಶಿವಲಿಂಗಸ್ವಾಮೀಜಿ ಅವರು ಗ್ರಾಮೀಣ ಭಾಗದ ಮಕ್ಕಳಿಗೆ ಜ್ಞಾನದ ಬೆಳಕನ್ನು ನೀಡಬೇಕು ಎಂಬ ಉದ್ದೇಶದಿಂದ ಆದರ್ಶ ಶಾಲೆ ತೆರೆದು ಕಡಿಮೆ ವೆಚ್ಚದಲ್ಲಿ ನುರಿತ ಶಿಕ್ಷಕರಿಂದ ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ ನೀಡುತ್ತಿರುವುದರ ಜತೆಗೆ ಶಾಲೆಯಲ್ಲಿ ಕುಡಿಯುವ ನೀರು, ಶೌಚಾಲಯದ ವ್ಯವಸ್ಥೆ, ವಿಶಾಲವಾದ ಆಟದ ಮೈದಾನ, ಆವರಣದ ಸುತ್ತ ಕಾಂಪೌಂಡ್ ನಿರ್ಮಿಸಿ, ಸಸಿಗಳನ್ನು ನೆಟ್ಟು ಒಳ್ಳೆಯ ಪರಿಸರದಲ್ಲಿ ಶಿಕ್ಷಣ ನೀಡುತ್ತಾ ಮಕ್ಕಳ ಸರ್ವಾಂಗೀಣ ಪ್ರಗತಿಗೆ ದಾರಿ ದೀಪವಾಗಿದ್ದಾರೆ.',
   },
+  {
+    name: 'ನಾಗರಾಜು',
+    relation: 'ಬೆಳವಾಡಿ',
+    image: imagePath('community_parent_nagaraj.png'),
+    quote:
+      '"ಆದರ್ಶ ಹಿರಿಯ ಪ್ರಾಥಮಿಕ ಶಾಲೆ ಬೆಳವಾಡಿ ಗ್ರಾಮದಲ್ಲಿದೆ." ವ್ಯಾಸಂಗ ಮಾಡುತ್ತಿರುವ ಮಕ್ಕಳ ಮುಂದಿನ ಭವಿಷ್ಯದ ಬಗ್ಗೆ ಕಾಳಜಿ ವಹಿಸಿ ತುಂಬಾ ಶ್ರದ್ಧೆ, ಭಕ್ತಿಯಿಂದ ಪಾಠ ಪ್ರವಚನವನ್ನು ಮಾಡುತ್ತಿದ್ದೀರಿ. ಹೀಗೆ, ಮಕ್ಕಳಿಗೆ ಶಿಸ್ತು, ಕ್ರೀಡೆ, ಮನರಂಜನೆ, ಕಾಯಕಗಳನ್ನು ಕೂಡ ಮಾಡಿಸುತ್ತಿದ್ದೀರಿ. ಇದು ಹೆಮ್ಮೆಪಡುವಂತಹ ವಿಚಾರ. ಇದರಿಂದ ಮಕ್ಕಳ ತಂದೆ-ತಾಯಂದಿರಿಗೆ ಮತ್ತು ಗ್ರಾಮಸ್ಥರಿಗೆ ಸಂತೋಷವನ್ನು ತರುತ್ತಿದೆ. ಇದೇ ರೀತಿ ಶಾಲೆಯ ವ್ಯವಸ್ಥಾಪಕರು, ಉಪಾಧ್ಯಾಯರು ಮತ್ತು ಉಪಾಧ್ಯಾಯನಿಯರು ಮಕ್ಕಳಿಗೆ ಇನ್ನೂ ಹೆಚ್ಚಿನ ಬೋಧನೆಯನ್ನು ನೀಡಿ ಶಾಲೆಗೆ ಕೀರ್ತಿ ಮತ್ತು ಗೌರವವನ್ನು ತರಬೇಕೆಂದು ನಿಮ್ಮಲ್ಲಿ ವಿನಂತಿಸಿ ಕೇಳುತ್ತೇನೆ.',
+  },
 ];
 
 const alumniTestimonials = [
@@ -43,8 +50,8 @@ const facultyMembers = [
   {
     name: 'Nandini S Chandra',
     phone: '9632795749',
-    qualification: 'PUC, D.Ed, NST Computer',
-    photo: imagePath('FacultyNandini madma.png'),
+    qualification: 'PUC, B.Ed, NST Computer',
+    photo: imagePath('Nandini S Chandra.jpg'),
   },
   {
     name: 'Harshitha Siddaraju',
@@ -56,19 +63,19 @@ const facultyMembers = [
     name: 'Shivakumar M Lingayya',
     phone: 'Not provided',
     qualification: 'PUC, TCH, B.Com',
-    photo: imagePath('FacultyShivakumar sir.png'),
+    photo: imagePath('FacultyShivakumar sir.jpg'),
   },
   {
     name: 'Naveeda Parveen',
     phone: '7483511040',
     qualification: 'PUC, JOC, Hindi B.Ed',
-    photo: imagePath('FacultyNaveeda madam.png'),
+    photo: imagePath('Naveeda Parveen.jpg'),
   },
   {
     name: 'Lokeshmurthy S/O M. Mallappa',
     phone: 'Not provided',
     qualification: 'PUC, TCH',
-    photo: imagePath('Faculty-Lokesh.png'),
+    photo: imagePath('Lokeshmurthy_faculty.jpg'),
   },
 ];
 

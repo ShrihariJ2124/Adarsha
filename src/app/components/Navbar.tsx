@@ -42,6 +42,15 @@ export function Navbar() {
     scrollToSection(id);
   };
 
+  const goHome = () => {
+    setIsMobileMenuOpen(false);
+    if (window.location.hash.startsWith('#/community/')) {
+      window.location.hash = '#home';
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navLinks = [
     { label: language === 'en' ? 'Home' : 'ಮುಖಪುಟ', id: 'home' },
     { label: language === 'en' ? 'About' : 'ನಮ್ಮ ಬಗ್ಗೆ', id: 'about' },
@@ -59,20 +68,24 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-6 xl:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24 lg:h-24">
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0 xl:flex-[0_0_28rem] pr-2">
-            <div className="w-14 h-14 sm:w-[4.5rem] sm:h-[4.5rem] lg:w-16 lg:h-16 rounded-xl bg-white shadow-lg border border-blue-100 p-1 shrink-0">
+        <div className="flex items-center justify-between h-[6.25rem] sm:h-[7.25rem] lg:h-[7.25rem]">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 xl:flex-[0_0_30rem] pr-2">
+            <button
+              onClick={goHome}
+              className="w-[5.25rem] h-[5.25rem] sm:w-[6.25rem] sm:h-[6.25rem] lg:w-[6rem] lg:h-[6rem] rounded-xl border border-blue-100 p-1 shrink-0 overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1e3a8a]/40"
+              aria-label="Go to home page"
+            >
               <img
                 src={siteImages.logo}
                 alt="ADHASRSHA HIGHER PRIMARY SCHOOL logo"
                 className="w-full h-full rounded-lg object-contain"
               />
-            </div>
+            </button>
             <div className="flex flex-col min-w-0">
-              <h1 className="text-[#1e3a8a] text-[11px] sm:text-sm lg:text-sm xl:text-base font-bold leading-tight">
+              <h1 className="text-[#1e3a8a] text-xs sm:text-base lg:text-base xl:text-lg font-bold leading-tight">
                 {language === 'en' ? 'ADHASRSHA HIGHER PRIMARY SCHOOL' : 'ಆದರ್ಶ ಹಿ.ಪ್ರಾ.ಶಾಲೆ'}
               </h1>
-              <p className="text-gray-600 text-[10px] sm:text-xs lg:text-sm">
+              <p className="text-gray-600 text-[11px] sm:text-sm lg:text-base">
                 {language === 'en' ? 'Belakavadi' : 'ಬೇಲಕವಾಡಿ'}
               </p>
             </div>
@@ -83,7 +96,7 @@ export function Navbar() {
               <button
                 key={link.id}
                 onClick={() => navigateToSection(link.id)}
-                className="text-sm text-gray-700 hover:text-[#1e3a8a] transition-colors duration-300 relative group whitespace-nowrap"
+                className="text-base text-gray-700 hover:text-[#1e3a8a] transition-colors duration-300 relative group whitespace-nowrap"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ea580c] transition-all duration-300 group-hover:w-full" />
@@ -93,8 +106,12 @@ export function Navbar() {
 
           <div className="hidden xl:flex items-center gap-3 xl:flex-[0_0_auto]">
             <div className="flex items-center gap-2">
-              <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-16 xl:h-20 w-auto object-contain" />
-              <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-16 xl:h-20 w-auto object-contain" />
+              <div className="h-[5.75rem] w-[4.1rem] xl:h-[6.5rem] xl:w-[4.6rem] rounded-[999px] overflow-hidden border border-blue-100 shadow-sm bg-white/80">
+                <img src={siteImages.swamiji.one} alt="Swamiji 1" className="h-full w-full object-cover" />
+              </div>
+              <div className="h-[5.75rem] w-[4.1rem] xl:h-[6.5rem] xl:w-[4.6rem] rounded-[999px] overflow-hidden border border-blue-100 shadow-sm bg-white/80">
+                <img src={siteImages.swamiji.two} alt="Swamiji 2" className="h-full w-full object-cover" />
+              </div>
             </div>
             <button
               onClick={() => setLanguage(language === 'en' ? 'kn' : 'en')}

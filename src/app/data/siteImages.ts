@@ -17,8 +17,8 @@ export const siteImages = {
   },
   facilities: {
     classrooms: imagePath('facility-01-classrooms.jpg'),
-    headmasterRoom: imagePath('facility-02-headmaster-room.jpg.jpeg'),
-    library: imagePath('gallery-10-library.jpg.jpeg'),
+    headmasterRoom: imagePath('facility-02-headmaster-room.jpg'),
+    library: imagePath('gallery-10-library.jpg'),
     smartClass: imagePath('facility-04-smart-class.jpg'),
     computers: imagePath('facility-05-computers.jpg'),
     playground: imagePath('facility-06-playground.jpg'),
@@ -44,8 +44,8 @@ export const siteImages = {
     studentPerformance: imagePath('gallery-12-student-performance.jpg'),
   },
   community: {
-    parents: imagePath('gallery-07-parent-teacher-meeting.png'), // placeholder
-    alumni: imagePath('hero-05-republic-day.png'), // placeholder
-    faculty: imagePath('about-school-building.jpg'), // placeholder
+    parents: imagePath('parent-lokeshmurty.png'),
+    alumni: imagePath('gallery-09-annual-function.jpg'),
+    faculty: imagePath('FacultyHarshitha.jpg'),
   },
 } as const;

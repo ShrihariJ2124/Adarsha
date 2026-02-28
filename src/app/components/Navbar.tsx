@@ -57,6 +57,7 @@ export function Navbar() {
     { label: language === 'en' ? 'Academics' : 'ಶೈಕ್ಷಣಿಕ', id: 'academics' },
     { label: language === 'en' ? 'Facilities' : 'ಸೌಲಭ್ಯಗಳು', id: 'facilities' },
     { label: language === 'en' ? 'Community' : 'ಸಮುದಾಯ', id: 'community' },
+    { label: language === 'en' ? 'Management Words' : 'ನಿರ್ವಹಣಾ ಸಂದೇಶ', id: 'management' },
     { label: language === 'en' ? 'Gallery' : 'ಗ್ಯಾಲರಿ', id: 'gallery' },
     { label: language === 'en' ? 'Contact' : 'ಸಂಪರ್ಕಿಸಿ', id: 'contact' },
   ];

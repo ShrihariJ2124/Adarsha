@@ -77,6 +77,12 @@ const facultyMembers = [
     qualification: 'PUC, TCH',
     photo: imagePath('Lokeshmurthy_faculty.jpg'),
   },
+  {
+    name: 'Jagadisha M',
+    phone: '9880458967',
+    qualification: 'BA, B.Ed',
+    photo: imagePath('Jagadisha M.jpeg'),
+  },
 ];
 
 const pageMeta = {

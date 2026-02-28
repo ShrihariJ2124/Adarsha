@@ -4,6 +4,7 @@ import { HeroCarousel } from './components/HeroCarousel';
 import { About } from './components/About';
 import { MissionVision } from './components/MissionVision';
 import { CoreValues } from './components/CoreValues';
+import { ManagementWords } from './components/ManagementWords';
 import { Facilities } from './components/Facilities';
 import { Academics } from './components/Academics';
 import { Community } from './components/Community';
@@ -72,6 +73,7 @@ export default function App() {
         ) : (
           <>
             <HeroCarousel />
+            <ManagementWords />
             <About />
             <MissionVision />
             <CoreValues />
